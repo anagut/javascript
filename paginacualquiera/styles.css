@@ -1,0 +1,15 @@
+h1 {text-align: center}
+
+section {display: inline-block;}
+
+img{width: 200px; height: 200px; margin: 5px}
+#imagen {display: inline-block}
+
+#muchotexto {width: 500px;
+display: inline-block;}
+
+#botones {display: inline-block;}
+
+.boton {display: inline-block;
+padding: 10% 0% 0%;
+margin: 0 auto;}

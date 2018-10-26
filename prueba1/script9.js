@@ -16,31 +16,17 @@ function operarNumeros (num1,num2,op) {
          else {resultado= num1/num2}}
     return resultado;}
 
-console.log (operarNumeros(4,8,'+'));
-console.log (operarNumeros(4,8,'-'));
-console.log (operarNumeros(4,8,'*'));
-console.log (operarNumeros(4,8,'/'));
-console.log (operarNumeros(4,0,'/'));
-
-//function operarNumArr (arr,op) {
-//    for (let i = 0; i < arr.length; i++) {
-//        if (op=='+'){result= result + arr[i];}
-//    };   
-//return result;}
 
 function operarNumArr (arr,op){
     if (op=='+'){
         result = 0;
         for (let i = 0; i < arr.length; i++) {
-            result = result + arr[i];}  
+            result = operarNumeros(result, arr[i],'+');}  
     }
     else if (op=='-'){
-        if (arr.length <=0) {result = 0}
-        else {
             result = arr[0]
             for (let i = 1; i < arr.length; i++) {
             result = result - arr[i];}
-        }
     }
 
     else if (op=='*'){
@@ -60,14 +46,5 @@ function operarNumArr (arr,op){
      return result;
 }
 
-console.log (operarNumArr([2,4,6,8,9],'+'));    //29
-console.log (operarNumArr([2,4,6,8,9],'-'));    //-25   
-console.log (operarNumArr([2,4,6,8,9],'*'));    //3456
-console.log (operarNumArr([2,4,6,8,9],'/'));    //0.001157
-console.log (operarNumArr([2,4,6,8,9],'/'));    //0
-
-console.log (operarNumArr([1,2,3,4],'+'));
-console.log (operarNumArr([],'-'));  
-console.log (operarNumArr([1,2,3,4],'*')); 
-console.log (operarNumArr([1,2,3,4],'/'));   
+console.log (operarNumArr([2,4,6,8,9],'+'));
 
