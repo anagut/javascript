@@ -13,3 +13,7 @@ botonlower.onclick = function(){
     titulo.innerHTML = titulo.innerHTML.toLowerCase();    
 }
 
+var botonsentence = document.getElementById('sentence');
+botonsentence.onclick = function(){
+    
+}

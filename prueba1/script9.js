@@ -46,5 +46,7 @@ function operarNumArr (arr,op){
      return result;
 }
 
+
+
 console.log (operarNumArr([2,4,6,8,9],'+'));
 
