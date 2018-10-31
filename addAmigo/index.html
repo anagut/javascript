@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>AJAX</h1>
+
+    <!-- <ul id="amigos"></ul>
+
+    <button id="cargarbtn">Cargar</button> -->
+
+    <h2>Amigos Facebook</h2>
+    <button id="botonFb">Amigos Facebook</button>
+    <ul id="amigosFb"></ul>
+
+    <h2>Amigos Spotify</h2>
+    <button id="botonSp">Amigos Spotify</button>
+    <ul id="amigosSp"></ul>
+
+    <h2>Añadir un amigo</h2>
+    <form id="addamigo" action="" method="POST">
+        <div id="mensaje" class="error ocultar">Nombre o correo no válidos.</div>
+        <div><input id="nombreamigo" type="text" minlength="3" required placeholder="Nombre"></div>
+        <div id="errornombre" class="error ocultar">Nombre incorrecto</div>
+        <div><input id="emailamigo" type="email" required placeholder="Email"></div>
+        <div id="erroremail" class="error ocultar">Email incorrecto</div>
+        <button id="addbtn">Añadir</button>
+    </form>
+
+</body>
+
+<script src="./jquery-3.3.1.min.js"></script>
+<script src="./scrypt.js"></script>
+
+</html>
